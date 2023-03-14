@@ -1,0 +1,21 @@
+<section>
+  <hr />
+
+  <input
+    type="text"
+    (keydown.enter)="onSearch(search.value)"
+    size="79"
+    #search
+  />
+  <button (click)="onSearch(search.value)">Buscar</button>
+
+  <blockquote *ngIf="!chatgpt?.result">
+    <p id="chatgpt_value">{{ chatgpt }}</p>
+  </blockquote>
+
+  <span *ngIf="chatgpt?.result">
+    <blockquote *ngFor="let chatgpt of chatgpt?.result">
+      <p id="chatgpt_value">{{ chatgpt }}</p>
+    </blockquote>
+  </span>
+</section>
