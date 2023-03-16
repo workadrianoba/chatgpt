@@ -4,10 +4,17 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ChatgptModule } from './chatgpt/chatgpt.module';
+import { SharedModule } from './shared/shared.module';
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule, AppRoutingModule, ChatgptModule, HttpClientModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    ChatgptModule,
+    HttpClientModule,
+    SharedModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
