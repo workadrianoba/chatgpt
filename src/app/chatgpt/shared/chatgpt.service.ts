@@ -32,7 +32,7 @@ export class ChatGPTService {
   getAuthHeaders() {
     let headers = new HttpHeaders({
       Authorization:
-        'Bearer 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',
+        'Bearer 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',
       Accept: 'application/json',
     });
 
