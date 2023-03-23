@@ -25,7 +25,7 @@ module.exports = function (config) {
       suppressAll: true // removes the duplicated traces
     },
     coverageReporter: {
-      dir: require('path').join(__dirname, './coverage/chuck-norris-api'),
+      dir: require('path').join(__dirname, './coverage/chatgpt'),
       subdir: '.',
       reporters: [
         { type: 'html' },
