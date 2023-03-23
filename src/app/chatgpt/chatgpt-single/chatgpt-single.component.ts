@@ -19,7 +19,6 @@ export class ChatgptSingleComponent implements OnInit {
       next: (res: any) => {
         this.chatgpt = res.choices?.[0].message.content;
         console.log(res.choices?.[0].message.content);
-        console.log(this.chatgpt);
       },
       error: (e: any) => {
         console.error(e);
